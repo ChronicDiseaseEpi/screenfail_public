@@ -1,0 +1,19 @@
+nct_id,medicine,condition,comparator,cmpr
+NCT02183064,meloxicam,Osteoarthritis,usual care nsaid,"Oxicams (M01AC) vs ANTIINFLAMMATORY AND ANTIRHEUMATIC PRODUCTS, NON-STEROIDS (M01A)"
+NCT02177344,ipratropium bromide,"Pulmonary Disease, Chronic Obstructive",ipratropium bromide,Anticholinergics (R03BB) vs Anticholinergics (R03BB)
+NCT00153088,telmisartan,Diabetic Nephropathies,placebo,"Angiotensin II antagonists, plain (C09CA)"
+NCT02177396,telmisartan,Hypertension,placebo,"Angiotensin II antagonists, plain (C09CA)"
+NCT00034840,telmisartan,Hypertension,valsartan,"Angiotensin II antagonists, plain (C09CA) vs Angiotensin II antagonists, plain (C09CA)"
+NCT02242318,telmisartan,Hypertension,valsartan,"Angiotensin II antagonists, plain (C09CA) vs Angiotensin II antagonists, plain (C09CA)"
+NCT00153023,telmisartan,"Diabetes Mellitus, Type 2, nephropathy",valsartan,"Angiotensin II antagonists, plain (C09CA) vs Angiotensin II antagonists, plain (C09CA)"
+NCT00168857,telmisartan,Hypertension; Diabetic Nephropathies,losartan,"Angiotensin II antagonists, plain (C09CA) vs Angiotensin II antagonists, plain (C09CA)"
+NCT00123903,carvedilol,"Heart failure, Congestive and Microalbuminuria",metoprolol,"Alpha and beta blocking agents (C07AG02) vs Beta blocking agents, selective (C07AB)"
+NCT00273052,carvedilol,Hypertension,metoprolol,"Alpha and beta blocking agents (C07AG02) vs Beta blocking agents, selective (C07AB)"
+NCT01916226,fluticasone propionate,"Rhinitis, Allergic, Perennial and Seasonal",cetirizine,Corticosteroids (R01AD) vs Piperazine derivatives (R06AE)
+NCT00115622,fluticasone furoate,"Rhinitis, Allergic, Seasonal",placebo,Corticosteroids (R01AD)
+NCT00117325,fluticasone furoate,"Rhinitis, Vasomotor",placebo,Corticosteroids (R01AD)
+NCT00118703,fluticasone furoate,"Rhinitis, Vasomotor",placebo,Corticosteroids (R01AD)
+NCT00609674,fluticasone furoate,"Rhinitis, Allergic, Perennial",placebo,Corticosteroids (R01AD)
+NCT00118729,fluticasone furoate,"Rhinitis, Allergic, Seasonal",placebo,Corticosteroids (R01AD)
+NCT00125918,Tadalafil,"Hypertension, Pulmonary",placebo,Corticosteroids (R01AD)
+NCT00670319,Raloxifene,Osteoporosis,placebo,Selective estrogen receptor modulators (G03XC)
