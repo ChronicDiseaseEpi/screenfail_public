@@ -333,6 +333,10 @@ res_nst$mods_cmpr_cond <- pmap(list(res_nst$cfs, res_nst$bd, res_nst$model), fun
     cores = 4)
 })
 
+# onemod <- brm(myform, data = res_nst$cfs[[1]], data2 = list(covs = res_nst$bd[[1]]), prior = mypriors, chains = 0)
+# saveRDS(onemod, "Scratch_data/one_model_compile.Rds")
+onemod <- readRDS("Scratch_data/one_model_compile.Rds")
+prior_summary(onemod)
 res_nst$mods_cond <- pmap(list(res_nst$cfs, res_nst$bd, res_nst$model), function(x, y, z) {
   print(z)
   mod_res <- Brm(
