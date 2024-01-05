@@ -321,6 +321,11 @@ mypriors <- c(
   set_prior("normal(0, 2)", class = "b", coef = "termIntercept"),
   set_prior("normal(0, 1)", class = "b"),
   set_prior("normal(0, 1)", class = "sd"))
+mypriors2 <- c(
+  prior(constant(1), class = "sigma"),
+  set_prior("normal(0, 4)", class = "b", coef = "termIntercept"),
+  set_prior("normal(0, 2)", class = "b"),
+  set_prior("normal(0, 2)", class = "sd"))
 
 res_nst$mods_cmpr_cond <- pmap(list(res_nst$cfs, res_nst$bd, res_nst$model), function(x, y, z) {
   print(z)
@@ -333,10 +338,21 @@ res_nst$mods_cmpr_cond <- pmap(list(res_nst$cfs, res_nst$bd, res_nst$model), fun
     cores = 4)
 })
 
+## Save to run on new VM where can use brms directly ----
+saveRDS(list(res_nst = res_nst %>% filter(model == "asce"), 
+             myform = myform, 
+             myform2 = myform2, 
+             myform3 = myform3,
+             mypriors = mypriors,
+             mypriors2 = mypriors2), "Scratch_data/newVM.Rds")
+
+## run a single model to obtain model objects
 # onemod <- brm(myform, data = res_nst$cfs[[1]], data2 = list(covs = res_nst$bd[[1]]), prior = mypriors, chains = 0)
 # saveRDS(onemod, "Scratch_data/one_model_compile.Rds")
 onemod <- readRDS("Scratch_data/one_model_compile.Rds")
 prior_summary(onemod)
+
+## save as models for 
 res_nst$mods_cond <- pmap(list(res_nst$cfs, res_nst$bd, res_nst$model), function(x, y, z) {
   print(z)
   mod_res <- Brm(
